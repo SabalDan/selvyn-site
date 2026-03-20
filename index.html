@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selvyn Valenzuela | Collections Specialist & Botanist</title>
-<meta name="description" content="Selvyn Valenzuela — Collections Specialist at Montgomery Botanical Center and graduate fellow specializing in GIS, plant databases, and conservation botany.">
+<title>Selvyn Valenzuela | Botanist, GIS Specialist &amp; Conservation Technologist</title>
+<meta name="description" content="Selvyn Valenzuela — Collections Specialist at Montgomery Botanical Center. Research interests in Borassus aethiopum germination ecology, robotic plant identification, GIS, and machine learning for conservation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -21,16 +21,12 @@
     --light-gold:#d4b870;
     --paper:     #faf7f2;
   }
-
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'Jost', sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    font-size: 16px;
-    line-height: 1.7;
+    background: var(--paper); color: var(--ink);
+    font-size: 16px; line-height: 1.7;
   }
 
   /* ── NAV ── */
@@ -52,12 +48,9 @@
   .nav-links a {
     font-size: 0.78rem; font-weight: 400; letter-spacing: 0.12em;
     text-transform: uppercase; color: var(--forest);
-    text-decoration: none; opacity: 0.75;
-    transition: opacity 0.2s;
+    text-decoration: none; opacity: 0.75; transition: opacity 0.2s;
   }
   .nav-links a:hover { opacity: 1; }
-
-  /* Hamburger */
   .hamburger {
     display: none; flex-direction: column; gap: 5px;
     background: none; border: none; cursor: pointer; padding: 4px;
@@ -75,12 +68,10 @@
     background: var(--forest);
     position: relative; overflow: hidden;
   }
-
   .hero-bg-svg {
     position: absolute; inset: 0; width: 100%; height: 100%;
     opacity: 0.07; pointer-events: none;
   }
-
   .hero-left {
     display: flex; flex-direction: column; justify-content: center;
     padding: 6rem 4rem 6rem 5rem;
@@ -95,47 +86,32 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(3rem, 5vw, 5rem);
     font-weight: 300; line-height: 1.08;
-    color: var(--ivory);
-    margin-bottom: 1rem;
+    color: var(--ivory); margin-bottom: 1rem;
   }
-  .hero-name em {
-    font-style: italic; color: var(--fern);
-  }
+  .hero-name em { font-style: italic; color: var(--fern); }
   .hero-title {
     font-size: 0.88rem; font-weight: 300; letter-spacing: 0.05em;
     color: rgba(245,240,232,0.65);
     line-height: 1.9; margin-bottom: 2.5rem;
-    border-left: 2px solid var(--gold);
-    padding-left: 1.2rem;
+    border-left: 2px solid var(--gold); padding-left: 1.2rem;
   }
-  .hero-cta {
-    display: flex; gap: 1rem; flex-wrap: wrap;
-  }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
   .btn {
     display: inline-block; padding: 0.7rem 1.8rem;
     font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em;
-    text-transform: uppercase; text-decoration: none;
-    transition: all 0.25s;
+    text-transform: uppercase; text-decoration: none; transition: all 0.25s;
   }
-  .btn-gold {
-    background: var(--gold); color: var(--ivory);
-    border: 1px solid var(--gold);
-  }
+  .btn-gold { background: var(--gold); color: var(--ivory); border: 1px solid var(--gold); }
   .btn-gold:hover { background: var(--light-gold); border-color: var(--light-gold); }
-  .btn-outline {
-    border: 1px solid rgba(245,240,232,0.35); color: var(--ivory);
-    background: transparent;
-  }
+  .btn-outline { border: 1px solid rgba(245,240,232,0.35); color: var(--ivory); background: transparent; }
   .btn-outline:hover { background: rgba(245,240,232,0.1); }
-
   .hero-right {
     display: flex; align-items: center; justify-content: center;
-    position: relative; z-index: 2;
-    padding: 4rem;
+    position: relative; z-index: 2; padding: 4rem;
   }
   .hero-right img {
-    width: 100%; max-width: 460px; height: auto;
-    max-height: 80vh; object-fit: contain;
+    width: 100%; max-width: 520px; height: auto;
+    max-height: 80vh; object-fit: cover;
     border-radius: 2px; opacity: 0.88;
   }
 
@@ -153,365 +129,142 @@
     font-weight: 300; color: var(--forest);
     line-height: 1.2; margin-bottom: 3rem;
   }
-  .divider {
-    width: 48px; height: 2px; background: var(--gold);
-    margin: 1.2rem 0 3rem;
-  }
+  .divider { width: 48px; height: 2px; background: var(--gold); margin: 1.2rem 0 3rem; }
 
   /* ── ABOUT ── */
   #about { background: var(--paper); }
-  .about-grid {
-    display: grid; grid-template-columns: 3fr 2fr; gap: 5rem;
-    align-items: start;
-  }
-  .about-body p {
-    font-size: 1.05rem; font-weight: 300; color: #3a3a30;
-    margin-bottom: 1.3rem; line-height: 1.85;
-  }
-  .about-body p strong {
-    font-weight: 500; color: var(--forest);
-  }
-  .about-body p em {
-    font-style: italic; font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1em;
-  }
+  .about-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 5rem; align-items: start; }
+  .about-body p { font-size: 1.05rem; font-weight: 300; color: #3a3a30; margin-bottom: 1.3rem; line-height: 1.85; }
+  .about-body p strong { font-weight: 500; color: var(--forest); }
+  .about-body p em { font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.1em; }
   .about-meta { display: flex; flex-direction: column; gap: 1.5rem; }
-
-  .headshot-frame {
-    width: 100%; aspect-ratio: 4/3;
-    overflow: hidden; margin-bottom: 1.5rem;
-    border: 1px solid var(--cream);
-  }
-  .headshot-frame img {
-    width: 100%; height: 100%; object-fit: cover; object-position: center;
-    filter: saturate(0.85);
-  }
-
-  .meta-card {
-    background: var(--cream);
-    border-left: 3px solid var(--sage);
-    padding: 1.2rem 1.4rem;
-  }
-  .meta-card h4 {
-    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.15em;
-    text-transform: uppercase; color: var(--moss);
-    margin-bottom: 0.4rem;
-  }
-  .meta-card p {
-    font-size: 0.9rem; color: var(--ink);
-    line-height: 1.5;
-  }
-  .meta-card a {
-    color: var(--moss); text-decoration: none;
-  }
+  .headshot-frame { width: 100%; aspect-ratio: 4/3; overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--cream); }
+  .headshot-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(0.85); }
+  .meta-card { background: var(--cream); border-left: 3px solid var(--sage); padding: 1.2rem 1.4rem; }
+  .meta-card h4 { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--moss); margin-bottom: 0.4rem; }
+  .meta-card p { font-size: 0.9rem; color: var(--ink); line-height: 1.5; }
+  .meta-card a { color: var(--moss); text-decoration: none; }
   .meta-card a:hover { color: var(--forest); text-decoration: underline; }
 
   /* ── EDUCATION ── */
   #education { background: var(--cream); }
   .edu-timeline { display: flex; flex-direction: column; gap: 2rem; }
-  .edu-item {
-    display: grid; grid-template-columns: auto 1fr; gap: 2rem;
-    align-items: start;
-  }
-  .edu-year {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem; font-weight: 400; color: var(--sage);
-    min-width: 100px; padding-top: 0.15rem;
-    white-space: nowrap;
-  }
-  .edu-degree {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem; font-weight: 600; color: var(--forest);
-    line-height: 1.3; margin-bottom: 0.2rem;
-  }
-  .edu-institution {
-    font-size: 0.88rem; color: #555; font-weight: 300;
-  }
-  .edu-note {
-    font-size: 0.82rem; color: var(--moss); font-weight: 400;
-    margin-top: 0.2rem; font-style: italic;
-    font-family: 'Cormorant Garamond', serif;
-  }
+  .edu-item { display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; }
+  .edu-year { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 400; color: var(--sage); min-width: 100px; padding-top: 0.15rem; white-space: nowrap; }
+  .edu-degree { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--forest); line-height: 1.3; margin-bottom: 0.2rem; }
+  .edu-institution { font-size: 0.88rem; color: #555; font-weight: 300; }
+  .edu-note { font-size: 0.82rem; color: var(--moss); font-weight: 400; margin-top: 0.2rem; font-style: italic; font-family: 'Cormorant Garamond', serif; }
 
   /* ── EXPERIENCE ── */
   #experience { background: var(--paper); }
   .exp-timeline { display: flex; flex-direction: column; gap: 2.5rem; }
-  .exp-item {
-    display: grid; grid-template-columns: auto 1fr; gap: 2.5rem;
-    align-items: start;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid rgba(74,103,65,0.12);
-  }
+  .exp-item { display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: start; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(74,103,65,0.12); }
   .exp-item:last-child { border-bottom: none; padding-bottom: 0; }
-  .exp-dates {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.95rem; font-weight: 400; color: var(--sage);
-    min-width: 140px; padding-top: 0.15rem;
-    white-space: nowrap;
-  }
-  .exp-role {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem; font-weight: 600; color: var(--forest);
-    line-height: 1.3; margin-bottom: 0.15rem;
-  }
-  .exp-org {
-    font-size: 0.85rem; color: var(--gold); font-weight: 400;
-    letter-spacing: 0.04em; margin-bottom: 0.5rem;
-  }
-  .exp-desc {
-    font-size: 0.92rem; color: #555; font-weight: 300; line-height: 1.75;
-  }
+  .exp-dates { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-weight: 400; color: var(--sage); min-width: 140px; padding-top: 0.15rem; white-space: nowrap; }
+  .exp-role { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--forest); line-height: 1.3; margin-bottom: 0.15rem; }
+  .exp-org { font-size: 0.85rem; color: var(--gold); font-weight: 400; letter-spacing: 0.04em; margin-bottom: 0.5rem; }
+  .exp-desc { font-size: 0.92rem; color: #555; font-weight: 300; line-height: 1.75; }
+
+  /* ── FOCAL SPECIES ── */
+  #species { background: var(--forest); }
+  #species .section-title { color: var(--ivory); }
+  #species .section-label { color: var(--light-gold); }
+  .species-intro { font-size: 1rem; color: rgba(245,240,232,0.7); max-width: 640px; margin-bottom: 3rem; font-weight: 300; line-height: 1.8; }
+  .species-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .species-card { border: 1px solid rgba(245,240,232,0.15); padding: 1.8rem 2rem; background: rgba(255,255,255,0.04); transition: background 0.2s; }
+  .species-card:hover { background: rgba(255,255,255,0.08); }
+  .species-name { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-style: italic; font-weight: 400; color: var(--fern); margin-bottom: 0.4rem; }
+  .species-common { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--light-gold); margin-bottom: 0.8rem; }
+  .species-desc { font-size: 0.88rem; color: rgba(245,240,232,0.65); line-height: 1.7; font-weight: 300; }
+  .species-status { display: inline-block; margin-top: 0.8rem; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.6rem; border: 1px solid; font-weight: 500; }
+  .status-lc { color: var(--fern); border-color: var(--fern); }
+  .status-critical { color: #e8a090; border-color: #e8a090; }
+  .status-collab { color: var(--light-gold); border-color: var(--light-gold); }
 
   /* ── RESEARCH / PROJECTS ── */
   #research { background: var(--paper); }
-  .research-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
-  }
-  .research-card {
-    background: var(--cream);
-    padding: 2rem;
-    border-top: 3px solid var(--sage);
-    transition: border-color 0.2s, transform 0.2s;
-  }
+  .research-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .research-card { background: var(--cream); padding: 2rem; border-top: 3px solid var(--sage); transition: border-color 0.2s, transform 0.2s; }
   .research-card:hover { border-color: var(--gold); transform: translateY(-3px); }
-  .research-card h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem; font-weight: 600; color: var(--forest);
-    margin-bottom: 0.8rem; line-height: 1.3;
-  }
-  .research-card p {
-    font-size: 0.88rem; color: #555; line-height: 1.7; font-weight: 300;
-  }
-  .research-icon {
-    font-size: 1.8rem; margin-bottom: 1rem;
-  }
+  .research-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--forest); margin-bottom: 0.8rem; line-height: 1.3; }
+  .research-card p { font-size: 0.88rem; color: #555; line-height: 1.7; font-weight: 300; }
+  .research-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+  .research-card .proposal-tag { display: inline-block; margin-top: 0.8rem; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.5rem; background: rgba(184,151,58,0.12); color: var(--gold); border: 1px solid rgba(184,151,58,0.3); }
 
   /* ── SKILLS ── */
-  #skills { background: var(--forest); }
-  #skills .section-title { color: var(--ivory); }
-  #skills .section-label { color: var(--light-gold); }
-  .skills-intro {
-    font-size: 1rem; color: rgba(245,240,232,0.7);
-    max-width: 640px; margin-bottom: 3rem; font-weight: 300; line-height: 1.8;
-  }
-  .skills-grid {
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
-  }
-  .skill-card {
-    border: 1px solid rgba(245,240,232,0.15);
-    padding: 1.8rem 2rem;
-    background: rgba(255,255,255,0.04);
-    transition: background 0.2s;
-  }
-  .skill-card:hover { background: rgba(255,255,255,0.08); }
-  .skill-category {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.25rem; font-weight: 400;
-    color: var(--fern); margin-bottom: 0.4rem;
-  }
-  .skill-tag-label {
-    font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--light-gold); margin-bottom: 0.8rem;
-  }
-  .skill-items {
-    font-size: 0.88rem; color: rgba(245,240,232,0.65);
-    line-height: 1.7; font-weight: 300;
-  }
+  #skills { background: var(--cream); }
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .skill-card { background: var(--paper); padding: 1.8rem 2rem; border-top: 3px solid var(--sage); }
+  .skill-category { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; color: var(--forest); margin-bottom: 0.3rem; }
+  .skill-tag-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+  .skill-items { font-size: 0.88rem; color: #555; line-height: 1.7; font-weight: 300; }
 
   /* ── PUBLICATIONS ── */
-  #publications { background: var(--cream); }
+  #publications { background: var(--paper); }
   .pub-list { display: flex; flex-direction: column; gap: 2rem; }
-  .pub-item {
-    display: grid; grid-template-columns: auto 1fr;
-    gap: 2rem; align-items: start;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(74,103,65,0.15);
-  }
+  .pub-item { display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start; padding-bottom: 2rem; border-bottom: 1px solid rgba(74,103,65,0.15); }
   .pub-item:last-child { border-bottom: none; padding-bottom: 0; }
-  .pub-year {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem; font-weight: 300; color: var(--sage);
-    line-height: 1; padding-top: 0.15rem;
-    min-width: 60px;
-  }
-  .pub-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem; font-style: italic; font-weight: 600;
-    color: var(--forest); margin-bottom: 0.35rem; line-height: 1.35;
-  }
-  .pub-journal {
-    font-size: 0.8rem; font-weight: 400; letter-spacing: 0.06em;
-    color: var(--gold); text-transform: uppercase; margin-bottom: 0.4rem;
-  }
-  .pub-citation {
-    font-size: 0.82rem; color: #777; font-weight: 300; margin-bottom: 0.4rem;
-  }
-  .pub-authors {
-    font-size: 0.88rem; color: #666; line-height: 1.5; font-weight: 300;
-  }
+  .pub-year { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--sage); line-height: 1; padding-top: 0.15rem; min-width: 60px; }
+  .pub-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-style: italic; font-weight: 600; color: var(--forest); margin-bottom: 0.35rem; line-height: 1.35; }
+  .pub-journal { font-size: 0.8rem; font-weight: 400; letter-spacing: 0.06em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.4rem; }
+  .pub-citation { font-size: 0.82rem; color: #777; font-weight: 300; margin-bottom: 0.4rem; }
+  .pub-authors { font-size: 0.88rem; color: #666; line-height: 1.5; font-weight: 300; }
 
   /* ── GALLERY ── */
   #gallery { background: var(--ink); }
   #gallery .section-label { color: var(--light-gold); }
   #gallery .section-title { color: var(--ivory); }
-  .gallery-intro {
-    font-size: 1rem; color: rgba(245,240,232,0.6);
-    max-width: 640px; margin-bottom: 3rem; font-weight: 300; line-height: 1.8;
-  }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    gap: 6px;
-    grid-auto-flow: dense;
-  }
-  .gallery-item {
-    position: relative; overflow: hidden;
-    cursor: pointer;
-  }
+  .gallery-intro { font-size: 1rem; color: rgba(245,240,232,0.6); max-width: 640px; margin-bottom: 3rem; font-weight: 300; line-height: 1.8; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 280px; gap: 6px; grid-auto-flow: dense; }
+  .gallery-item { position: relative; overflow: hidden; cursor: pointer; }
   .gallery-item.span-2 { grid-column: span 2; }
   .gallery-item.tall { grid-row: span 2; }
-  .gallery-item img {
-    width: 100%; height: 100%; object-fit: cover;
-    transition: transform 0.5s ease, filter 0.5s ease;
-    filter: saturate(0.75) brightness(0.85);
-  }
-  .gallery-item:hover img {
-    transform: scale(1.05);
-    filter: saturate(1) brightness(1);
-  }
-  .gallery-overlay {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    padding: 2rem 1.2rem 1rem;
-    background: linear-gradient(transparent, rgba(0,0,0,0.75));
-    transform: translateY(100%);
-    transition: transform 0.35s ease;
-  }
-  .gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-  }
-  .gallery-tag {
-    font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--light-gold); margin-bottom: 0.3rem; display: block;
-  }
-  .gallery-caption {
-    font-size: 0.82rem; color: rgba(255,255,255,0.9);
-    font-weight: 300; line-height: 1.4;
-  }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease, filter 0.5s ease; filter: saturate(0.75) brightness(0.85); }
+  .gallery-item:hover img { transform: scale(1.05); filter: saturate(1) brightness(1); }
+  .gallery-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem 1.2rem 1rem; background: linear-gradient(transparent, rgba(0,0,0,0.75)); transform: translateY(100%); transition: transform 0.35s ease; }
+  .gallery-item:hover .gallery-overlay { transform: translateY(0); }
+  .gallery-tag { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--light-gold); margin-bottom: 0.3rem; display: block; }
+  .gallery-caption { font-size: 0.82rem; color: rgba(255,255,255,0.9); font-weight: 300; line-height: 1.4; }
 
   /* Lightbox */
-  .lightbox-overlay {
-    display: none; position: fixed; inset: 0; z-index: 1000;
-    background: rgba(0,0,0,0.92); backdrop-filter: blur(6px);
-    justify-content: center; align-items: center;
-    padding: 2rem; cursor: pointer;
-  }
+  .lightbox-overlay { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.92); backdrop-filter: blur(6px); justify-content: center; align-items: center; padding: 2rem; cursor: pointer; }
   .lightbox-overlay.active { display: flex; }
-  .lightbox-overlay img {
-    max-width: 90vw; max-height: 85vh;
-    object-fit: contain; border: 1px solid rgba(255,255,255,0.1);
-  }
-  .lightbox-caption {
-    position: absolute; bottom: 1.5rem; left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.85rem; color: rgba(255,255,255,0.7);
-    font-weight: 300; text-align: center; max-width: 600px;
-  }
-  .lightbox-close {
-    position: absolute; top: 1.5rem; right: 2rem;
-    font-size: 1.8rem; color: rgba(255,255,255,0.5);
-    cursor: pointer; background: none; border: none;
-    transition: color 0.2s;
-  }
+  .lightbox-overlay img { max-width: 90vw; max-height: 85vh; object-fit: contain; border: 1px solid rgba(255,255,255,0.1); }
+  .lightbox-caption { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); font-size: 0.85rem; color: rgba(255,255,255,0.7); font-weight: 300; text-align: center; max-width: 600px; }
+  .lightbox-close { position: absolute; top: 1.5rem; right: 2rem; font-size: 1.8rem; color: rgba(255,255,255,0.5); cursor: pointer; background: none; border: none; transition: color 0.2s; }
   .lightbox-close:hover { color: #fff; }
 
   /* ── AFFILIATIONS ── */
-  #affiliations { background: var(--paper); }
-  .affil-cols {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
-  }
-  .affil-group h3 {
-    font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em;
-    text-transform: uppercase; color: var(--moss);
-    margin-bottom: 1.5rem; padding-bottom: 0.6rem;
-    border-bottom: 1px solid var(--sage);
-  }
+  #affiliations { background: var(--cream); }
+  .affil-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .affil-group h3 { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--moss); margin-bottom: 1.5rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--sage); }
   .affil-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
-  .affil-list li {
-    display: flex; align-items: flex-start; gap: 0.8rem;
-    font-size: 0.93rem; font-weight: 300; color: #3a3a30;
-    line-height: 1.45;
-  }
-  .affil-list li::before {
-    content: ''; display: block; flex-shrink: 0;
-    width: 6px; height: 6px; border-radius: 50%;
-    background: var(--sage); margin-top: 0.55rem;
-  }
+  .affil-list li { display: flex; align-items: flex-start; gap: 0.8rem; font-size: 0.93rem; font-weight: 300; color: #3a3a30; line-height: 1.45; }
+  .affil-list li::before { content: ''; display: block; flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--sage); margin-top: 0.55rem; }
   .affil-list li strong { font-weight: 500; color: var(--forest); }
 
   /* ── CONTACT ── */
-  #contact {
-    background: var(--forest);
-    text-align: center;
-    padding: 6rem 0;
-  }
+  #contact { background: var(--forest); text-align: center; padding: 6rem 0; }
   #contact .section-label { color: var(--light-gold); }
   #contact .section-title { color: var(--ivory); margin-bottom: 1rem; }
-  .contact-sub {
-    font-size: 0.93rem; color: rgba(245,240,232,0.6);
-    margin-bottom: 3rem; font-weight: 300;
-  }
-  .contact-links {
-    display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap;
-  }
-  .contact-link {
-    display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
-    text-decoration: none; transition: opacity 0.2s;
-    opacity: 0.8;
-  }
+  .contact-sub { font-size: 0.93rem; color: rgba(245,240,232,0.6); margin-bottom: 3rem; font-weight: 300; }
+  .contact-links { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
+  .contact-link { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; text-decoration: none; transition: opacity 0.2s; opacity: 0.8; }
   .contact-link:hover { opacity: 1; }
-  .contact-link-label {
-    font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
-    color: var(--light-gold);
-  }
-  .contact-link-value {
-    font-size: 0.93rem; color: var(--ivory); font-weight: 300;
-  }
-  .orcid-badge {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
-    padding: 0.5rem 1rem; margin-top: 2rem;
-    font-size: 0.8rem; color: rgba(245,240,232,0.7);
-    text-decoration: none; transition: background 0.2s;
-  }
+  .contact-link-label { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--light-gold); }
+  .contact-link-value { font-size: 0.93rem; color: var(--ivory); font-weight: 300; }
+  .orcid-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); padding: 0.5rem 1rem; margin-top: 2rem; font-size: 0.8rem; color: rgba(245,240,232,0.7); text-decoration: none; transition: background 0.2s; }
   .orcid-badge:hover { background: rgba(255,255,255,0.1); }
 
-  /* ── FOOTER ── */
-  footer {
-    background: var(--ink);
-    padding: 1.5rem 4rem;
-    display: flex; justify-content: space-between; align-items: center;
-    font-size: 0.75rem; color: rgba(245,240,232,0.35);
-  }
+  footer { background: var(--ink); padding: 1.5rem 4rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: rgba(245,240,232,0.35); }
   footer a { color: rgba(245,240,232,0.45); text-decoration: none; }
 
-  /* ── FADE-IN ANIMATION ── */
-  .reveal {
-    opacity: 0; transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     nav { padding: 1rem 2rem; }
-    .nav-links {
-      position: fixed; top: 0; right: -100%; width: 280px; height: 100vh;
-      flex-direction: column; gap: 0; padding: 5rem 2rem 2rem;
-      background: var(--paper); box-shadow: -4px 0 20px rgba(0,0,0,0.1);
-      transition: right 0.3s ease;
-    }
+    .nav-links { position: fixed; top: 0; right: -100%; width: 280px; height: 100vh; flex-direction: column; gap: 0; padding: 5rem 2rem 2rem; background: var(--paper); box-shadow: -4px 0 20px rgba(0,0,0,0.1); transition: right 0.3s ease; }
     .nav-links.open { right: 0; }
     .nav-links li { padding: 0.8rem 0; border-bottom: 1px solid var(--cream); }
     .nav-links a { font-size: 0.85rem; letter-spacing: 0.08em; opacity: 1; }
@@ -519,20 +272,18 @@
     .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
     .hamburger.active span:nth-child(2) { opacity: 0; }
     .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
-
     .hero { grid-template-columns: 1fr; }
     .hero-right { display: none; }
     .hero-left { padding: 5rem 2rem 4rem; }
     .container { padding: 0 2rem; }
     .about-grid, .affil-cols { grid-template-columns: 1fr; gap: 2.5rem; }
-    .research-grid { grid-template-columns: 1fr; }
-    .skills-grid { grid-template-columns: 1fr; }
+    .research-grid, .skills-grid { grid-template-columns: 1fr; }
+    .species-grid { grid-template-columns: 1fr; }
     .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 200px; }
     .gallery-item.span-2 { grid-column: span 1; }
     .gallery-item.tall { grid-row: span 1; }
     .gallery-overlay { transform: translateY(0); }
-    .exp-item { grid-template-columns: 1fr; gap: 0.3rem; }
-    .edu-item { grid-template-columns: 1fr; gap: 0.3rem; }
+    .exp-item, .edu-item { grid-template-columns: 1fr; gap: 0.3rem; }
     footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem 2rem; }
   }
 </style>
@@ -546,14 +297,14 @@
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links">
-    <li><a href="#about" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">About</a></li>
-    <li><a href="#education" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">Education</a></li>
-    <li><a href="#experience" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">Experience</a></li>
-    <li><a href="#research" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">Projects</a></li>
-    <li><a href="#skills" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">Skills</a></li>
-    <li><a href="#gallery" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">Gallery</a></li>
-    <li><a href="#publications" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">Publications</a></li>
-    <li><a href="#contact" onclick="document.querySelector('.nav-links').classList.remove('open'); document.querySelector('.hamburger').classList.remove('active');">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#species">Focal Species</a></li>
+    <li><a href="#research">Projects</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -572,12 +323,12 @@
   </svg>
 
   <div class="hero-left">
-    <span class="hero-eyebrow">Collections Specialist · Montgomery Botanical Center</span>
+    <span class="hero-eyebrow">Collections Specialist &middot; Montgomery Botanical Center &middot; FIU</span>
     <h1 class="hero-name">Selvyn<br><em>Valenzuela</em></h1>
     <p class="hero-title">
       Collections Specialist &mdash; Montgomery Botanical Center<br>
-      Graduate Fellow &mdash; Montgomery Botanical Center<br>
-      B.S. Environmental Studies &amp; Agricultural Studies &mdash; Florida International University
+      Graduate Fellow &amp; B.S. Candidate &mdash; Florida International University<br>
+      Research Focus: <em>Borassus aethiopum</em> &middot; Robotic Plant ID &middot; GIS &amp; Machine Learning
     </p>
     <div class="hero-cta">
       <a href="#research" class="btn btn-gold">View Projects</a>
@@ -586,7 +337,7 @@
   </div>
 
   <div class="hero-right">
-    <img src="images/sabal-miamiensis.jpg" alt="Sabal miamiensis — a critically imperiled palm endemic to Miami-Dade County, Florida">
+    <img src="images/gis-training.jpg" alt="Selvyn Valenzuela training interns in GNSS surveying at Montgomery Botanical Center">
   </div>
 </section>
 
@@ -598,27 +349,25 @@
         <span class="section-label">About</span>
         <h2 class="section-title">Where Technology Meets<br>Conservation Botany</h2>
         <div class="divider"></div>
-        <p>I am the <strong>Collections Specialist at Montgomery Botanical Center</strong> in Coral Gables, Florida, where I manage and maintain the institution's maps and GIS database. I lead a small rotating team focused on garden inventory, mapping, utility locating, software development, and database management, building interactive maps and tools that help visiting researchers target species across our 120-acre property.</p>
-        <p>My work sits at the intersection of <strong>geospatial technology and plant conservation</strong>. At MBC, I modernized the inventory and plant record database processes by implementing a mobile-based data collection solution that compressed months of fieldwork into a 72-day window &mdash; then collaborated with BGB developers to automate data upload, turning months of effort into seconds of systematic review. I have also established new Base and Rover GNSS reference points throughout the property to improve GIS infrastructure and productivity.</p>
-        <p>Beyond my collections work, I contribute to research at the <strong>Lab for Conservation &amp; Sustainable Horticulture at Florida International University</strong>, and I am co-author on publications addressing the taxonomy of Cuban endemic palms and the rediscovery and restoration of <em>Sabal miamiensis</em>, a palm once listed as Extinct in the Wild. I am also developing <strong>deep learning computer vision models</strong> for plant identification from aerial imagery &mdash; work aimed at enabling ecological census of species at landscape scale.</p>
+        <p>I am the <strong>Collections Specialist at Montgomery Botanical Center</strong> in Coral Gables, Florida, where I manage the institution's maps, GIS database, and garden inventory systems. I lead a small rotating team focused on mapping, utility locating, software development, and database management &mdash; building interactive tools that help visiting researchers target species across our 120-acre property.</p>
+        <p>My scientific journey began with an internship at Redland Ahead, a controlled-environment agriculture farm, where I first experienced the connection between academic knowledge and real-world agricultural systems. At MBC, I was introduced to conservation research through Dr. Amir Khoddamzadeh and the Conservation Fellowship program. Since then I have advanced to Collections Specialist, where I modernized how data is collected in the garden &mdash; implementing digital applications and improving data migration workflows that compressed months of fieldwork into 72 working days, while creating cleaner databases and new research opportunities.</p>
+        <p>Along the way I have contributed to a range of collaborative projects: investigating <em>Cycas micronesica</em> pollination ecology with Dr. Irene Terry, studying coyote dietary ecology with Dr. Mark Kraus, documenting the floral anatomy of <em>Coccothrinax crinita</em> through SEM at FIU's FCAEM lab with Dr. Javier Francisco-Ortega, and supporting the rediscovery and taxonomy of Florida's native <em>Sabal</em> palms with Daniel Tucker. These collaborations broadened my scientific perspective and gave me the confidence to pursue my own research on <strong><em>Borassus aethiopum</em></strong>, a robust African palm whose germination ecology I am now exploring at the intersection of ecology, thermal biology, and artificial intelligence.</p>
       </div>
       <div class="about-meta reveal">
         <div class="headshot-frame">
-          <img src="images/gis-training.jpg" alt="Selvyn Valenzuela training interns in GIS and GNSS surveying at Montgomery Botanical Center">
+          <img src="images/mbc-tour.jpg" alt="Selvyn Valenzuela with colleagues and visitors at Montgomery Botanical Center">
         </div>
         <div class="meta-card">
           <h4>Position</h4>
           <p>Collections Specialist &amp; Graduate Fellow<br>Montgomery Botanical Center<br>Coral Gables, FL 33156</p>
         </div>
         <div class="meta-card">
-          <h4>Affiliation</h4>
-          <p>Lab for Conservation &amp; Sustainable Horticulture<br>Florida International University</p>
+          <h4>Academic Affiliation</h4>
+          <p>Lab for Conservation &amp; Sustainable Horticulture<br>Florida International University<br>Advisor: Dr. Amir Ali Khoddamzadeh</p>
         </div>
         <div class="meta-card">
           <h4>Contact</h4>
-          <p>
-            <a href="mailto:selvyn@montgomerybotanical.org">selvyn@montgomerybotanical.org</a>
-          </p>
+          <p><a href="mailto:selvyn@montgomerybotanical.org">selvyn@montgomerybotanical.org</a></p>
         </div>
         <div class="meta-card">
           <h4>Profiles</h4>
@@ -643,7 +392,7 @@
         <div>
           <p class="edu-degree">Bachelor of Science &mdash; Environmental Studies &amp; Agricultural Studies</p>
           <p class="edu-institution">Florida International University, Miami</p>
-          <p class="edu-note">Continuing studies</p>
+          <p class="edu-note">Continuing studies &middot; Lab for Conservation &amp; Sustainable Horticulture</p>
         </div>
       </div>
       <div class="edu-item reveal">
@@ -663,7 +412,6 @@
     <span class="section-label reveal">Professional Experience</span>
     <h2 class="section-title reveal">Career at Montgomery<br>Botanical Center &amp; Beyond</h2>
     <div class="exp-timeline">
-
       <div class="exp-item reveal">
         <span class="exp-dates">Aug 2024 &ndash; Present</span>
         <div>
@@ -672,7 +420,6 @@
           <p class="exp-desc">Manage and maintain MBC's maps and GIS database. Lead a small rotating team focused on garden inventory, mapping, utility locating, software development, and database management. Build interactive maps to assist visiting researchers in targeting species across the 120-acre property.</p>
         </div>
       </div>
-
       <div class="exp-item reveal">
         <span class="exp-dates">Jan 2023 &ndash; Aug 2024</span>
         <div>
@@ -681,7 +428,6 @@
           <p class="exp-desc">Assistant to the Collections Specialist, developing skills in GNSS tool use, mapping, data management, plant inventory, and garden-to-public relationships.</p>
         </div>
       </div>
-
       <div class="exp-item reveal">
         <span class="exp-dates">Sep 2022 &ndash; Sep 2023</span>
         <div>
@@ -690,14 +436,52 @@
           <p class="exp-desc">Developed horticultural and botanical skills related to conservation, education, and research. Rotated through each department gaining necessary skills for improving garden success.</p>
         </div>
       </div>
-
       <div class="exp-item reveal">
         <span class="exp-dates">May 2019 &ndash; Jun 2019</span>
         <div>
           <p class="exp-role">Summer Intern</p>
           <p class="exp-org">Redland Ahead &middot; Homestead, FL</p>
-          <p class="exp-desc">Researched horticultural techniques for improving nursery plant success and growth rates for vegetable crops.</p>
+          <p class="exp-desc">Researched horticultural techniques for improving nursery plant success and growth rates for vegetable crops in a controlled-environment agriculture setting.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOCAL SPECIES ── -->
+<section id="species">
+  <div class="container">
+    <span class="section-label reveal">Focal Species</span>
+    <h2 class="section-title reveal">Research Organisms</h2>
+    <p class="species-intro reveal">My independent research centers on <em>Borassus aethiopum</em>, a robust African palm with untapped potential for both ecological study and community livelihood. Collaborative projects span additional palm and cycad taxa at Montgomery Botanical Center.</p>
+    <div class="species-grid">
+
+      <div class="species-card reveal">
+        <p class="species-name">Borassus aethiopum</p>
+        <p class="species-common">African Palmyra Palm &middot; R&ocirc;nier</p>
+        <p class="species-desc">A dioecious fan palm of sub-Saharan African dry savannas, valued for timber, fruit, sap, and fiber. Distributed across Benin, Cameroon, Nigeria, Uganda, and more than 49 additional localities. Despite IUCN Least Concern status globally, populations are threatened by shifting agriculture and intentional harvest. At MBC, I study thermal inputs on germination with the goal of improving recruitment, sustainability, and economic growth for native communities that depend on this palm.</p>
+        <span class="species-status status-lc">IUCN &mdash; Least Concern</span>
+      </div>
+
+      <div class="species-card reveal">
+        <p class="species-name">Cycas micronesica</p>
+        <p class="species-common">Micronesian Cycad</p>
+        <p class="species-desc">An endangered cycad native to Micronesia, Palau, and Guam. In collaboration with the University of Utah's Dr. Irene Terry, I contribute to ongoing research investigating pollination mechanisms, phenology, mutualism, and adaptation within MBC's <em>ex situ</em> living collection.</p>
+        <span class="species-status status-critical">Endangered</span>
+      </div>
+
+      <div class="species-card reveal">
+        <p class="species-name">Coccothrinax crinita</p>
+        <p class="species-common">Old Man Palm</p>
+        <p class="species-desc">A rare Cuban endemic palm recognized for its distinctive fibrous trunk. Working with Dr. Javier Francisco-Ortega, I documented floral anatomy at both macro and microscopic scale using scanning electron microscopy at FIU's FCAEM facility, contributing to nomenclatural and botanical history research published in <em>Kew Bulletin</em>.</p>
+        <span class="species-status status-critical">Critically Endangered</span>
+      </div>
+
+      <div class="species-card reveal">
+        <p class="species-name">Sabal miamiensis</p>
+        <p class="species-common">Miami Palm &middot; Collaborative Research</p>
+        <p class="species-desc">A critically imperiled palm endemic to Miami-Dade County, listed as Extinct in the Wild since 1997 until wild populations were rediscovered in 2024. I contribute to ongoing field surveys and restoration efforts as part of a collaborative team at Montgomery Botanical Center, co-authoring publications on new population discoveries.</p>
+        <span class="species-status status-collab">Collaborative Research</span>
       </div>
 
     </div>
@@ -707,39 +491,47 @@
 <!-- ── PROJECTS ── -->
 <section id="research">
   <div class="container">
-    <span class="section-label reveal">Projects &amp; Works</span>
-    <h2 class="section-title reveal">From Databases to<br>Deep Learning</h2>
+    <span class="section-label reveal">Projects &amp; Investigations</span>
+    <h2 class="section-title reveal">From Germination Ecology<br>to Robotic Surveying</h2>
     <div class="research-grid">
+
+      <div class="research-card reveal">
+        <div class="research-icon">&#x1F334;</div>
+        <h3><em>Borassus aethiopum</em> Germination Ecology</h3>
+        <p>Analyzing the effects of thermal inputs on germination factors in <em>Borassus aethiopum</em>, with the goal of improving seedling recruitment, sustainability, and promoting economic growth for native communities that depend on the palm for food, fiber, and construction.</p>
+      </div>
+
+      <div class="research-card reveal">
+        <div class="research-icon">&#x1F916;</div>
+        <h3>Autonomous Robotic Plant Identification</h3>
+        <p>Developing a machine learning&ndash;based computer vision system deployed on a Unitree Go2 X quadruped robot for automated identification of understory plant species in South Florida's endangered pine rockland habitat. Uses ResNet-50 and YOLOv8 architectures with onboard 4D LiDAR for 3D vegetation structure mapping.</p>
+        <span class="proposal-tag">GIAR Proposal &mdash; Sigma Xi</span>
+      </div>
+
       <div class="research-card reveal">
         <div class="research-icon">&#x1F5FA;&#xFE0F;</div>
         <h3>Database Modernization at MBC</h3>
-        <p>Implemented a mobile-based solution for data collection across a 120-acre property, compressing months of inventory work into a 72-day window. Collaborated with BGB developers to automate data upload after systematic review.</p>
+        <p>Implemented a mobile-based solution for data collection across a 120-acre property, compressing months of inventory work into a 72-day window. Collaborated with BGB developers to automate data upload after systematic review, creating cleaner databases and new research opportunities.</p>
       </div>
+
       <div class="research-card reveal">
         <div class="research-icon">&#x1F4E1;</div>
         <h3>GIS Infrastructure Improvement</h3>
         <p>Established new Base and Rover GNSS equipment with calibrated reference points throughout MBC property, reducing labor hours and increasing spatial accuracy and productivity for all mapping operations.</p>
       </div>
+
       <div class="research-card reveal">
-        <div class="research-icon">&#x1F916;</div>
-        <h3>Deep Learning for Plant ID</h3>
-        <p>Developing computer vision models for plant identification within aerial imagery to enable ecological census of species at landscape scale &mdash; supporting conservation practices, population dynamics studies, and sustainable land use.</p>
+        <div class="research-icon">&#x1F9EC;</div>
+        <h3>Cycad Pollination Research</h3>
+        <p>Collaborative research with the University of Utah's Dr. Irene Terry investigating endangered <em>Cycas micronesica</em> pollination mechanisms, phenology, mutualism, and adaptation within an <em>ex situ</em> garden setting at Montgomery Botanical Center.</p>
       </div>
+
       <div class="research-card reveal">
-        <div class="research-icon">&#x1F33F;</div>
-        <h3><em>Borassus aethiopum</em> Germination</h3>
-        <p>Research project analyzing the effects of thermal inputs on germination factors in <em>Borassus aethiopum</em>, with the goal of improving recruitment, sustainability, and economic growth for native communities.</p>
+        <div class="research-icon">&#x1F4F7;</div>
+        <h3>SEM Imaging of <em>Coccothrinax crinita</em></h3>
+        <p>Documented floral anatomy of the rare Cuban old man palm at both macro and microscopic scale using scanning electron microscopy at FIU's FCAEM lab, contributing to nomenclatural research published in <em>Kew Bulletin</em> with Dr. Javier Francisco-Ortega.</p>
       </div>
-      <div class="research-card reveal">
-        <div class="research-icon">&#x1F331;</div>
-        <h3>Cycad Conservation with MBC &amp; UU</h3>
-        <p>Collaborative research with the University of Utah's Dr. Irene Terry investigating endangered cycad pollination mechanisms, phenology, mutualism, and adaptation within an <em>ex situ</em> garden setting.</p>
-      </div>
-      <div class="research-card reveal">
-        <div class="research-icon">&#x1F334;</div>
-        <h3><em>Sabal miamiensis</em> Research</h3>
-        <p>Contributing to the rediscovery, documentation, and restoration of <em>Sabal miamiensis</em> &mdash; a palm once listed as Extinct in the Wild. Co-author on publications describing new wild populations and ongoing restoration efforts in Miami-Dade County.</p>
-      </div>
+
     </div>
   </div>
 </section>
@@ -749,27 +541,26 @@
   <div class="container">
     <span class="section-label reveal">Technical Skills</span>
     <h2 class="section-title reveal">Tools &amp; Expertise</h2>
-    <p class="skills-intro reveal">From field-grade GNSS receivers to Python-driven machine learning pipelines, my toolkit bridges the gap between physical landscapes and digital analysis.</p>
     <div class="skills-grid">
       <div class="skill-card reveal">
         <p class="skill-category">GIS &amp; Geospatial</p>
         <p class="skill-tag-label">Mapping &amp; Spatial Analysis</p>
-        <p class="skill-items">ArcGIS, QGIS, QField, GIS Analytics, LiDAR, GNSS Base &amp; Rover Systems</p>
+        <p class="skill-items">ArcGIS, QGIS, QField, GIS Analytics, LiDAR, GNSS Base &amp; Rover Systems, Remote Sensing</p>
       </div>
       <div class="skill-card reveal">
         <p class="skill-category">Programming &amp; Data</p>
-        <p class="skill-tag-label">Development &amp; Automation</p>
-        <p class="skill-items">Python, Computer Programming, Database Management, Machine Learning, Deep Learning</p>
+        <p class="skill-tag-label">Development &amp; AI</p>
+        <p class="skill-items">Python, Database Management, Machine Learning, Deep Learning (ResNet, YOLOv8), ROS, Computer Vision</p>
       </div>
       <div class="skill-card reveal">
         <p class="skill-category">Laboratory &amp; Field</p>
         <p class="skill-tag-label">Scientific Techniques</p>
-        <p class="skill-items">SEM (Scanning Electron Microscopy), Botany, Research Methods, Photography</p>
+        <p class="skill-items">Scanning Electron Microscopy (SEM), Botanical Survey, Photography (Macro &amp; Micro), Germination Trials</p>
       </div>
       <div class="skill-card reveal">
         <p class="skill-category">Communication</p>
         <p class="skill-tag-label">Collaboration &amp; Outreach</p>
-        <p class="skill-items">Public Relations, Scientific Communication, Collaboration, Bilingual &mdash; English &amp; Spanish</p>
+        <p class="skill-items">Public Relations, Scientific Communication, Bilingual (English &amp; Spanish), Mentorship &amp; Teaching</p>
       </div>
     </div>
   </div>
@@ -778,14 +569,14 @@
 <!-- ── GALLERY ── -->
 <section id="gallery">
   <div class="container">
-    <span class="section-label reveal">In the Field &amp; Office</span>
+    <span class="section-label reveal">In the Field &amp; Lab</span>
     <h2 class="section-title reveal">Work in Action</h2>
-    <p class="gallery-intro reveal">From training interns in GNSS surveying to conducting field research across South Florida's threatened ecosystems &mdash; a selection of moments from ongoing work at Montgomery Botanical Center.</p>
+    <p class="gallery-intro reveal">From training interns in GNSS surveying to conducting field research across South Florida's threatened ecosystems and running germination experiments in the lab.</p>
 
     <div class="gallery-grid">
 
       <div class="gallery-item span-2 reveal" onclick="openLightbox(this)">
-        <img src="images/field-survey.jpg" alt="Selvyn Valenzuela, Daniel Tucker, and Dr. Michael Ross survey a Sabal research site with interns" loading="lazy">
+        <img src="images/field-survey.jpg" alt="Selvyn Valenzuela and team survey a Sabal research site" loading="lazy">
         <div class="gallery-overlay">
           <span class="gallery-tag">Field Research</span>
           <span class="gallery-caption">Surveying a <em>Sabal</em> research site with Dr. Michael Ross and FIU undergraduate interns</span>
@@ -793,26 +584,42 @@
       </div>
 
       <div class="gallery-item reveal" onclick="openLightbox(this)">
-        <img src="images/sabal-miamiensis.jpg" alt="Sabal miamiensis in its native habitat" loading="lazy">
+        <img src="images/germination-lab.jpg" alt="Seedling germination experiment under grow lights" loading="lazy">
         <div class="gallery-overlay">
-          <span class="gallery-tag">Conservation</span>
-          <span class="gallery-caption"><em>Sabal miamiensis</em> &mdash; a critically imperiled palm endemic to Miami-Dade County</span>
+          <span class="gallery-tag">Laboratory</span>
+          <span class="gallery-caption">Germination and seedling growth experiments at Montgomery Botanical Center</span>
         </div>
       </div>
 
       <div class="gallery-item reveal" onclick="openLightbox(this)">
-        <img src="images/gis-training.jpg" alt="Selvyn Valenzuela training FIU undergrad interns in GIS and GNSS surveying" loading="lazy">
+        <img src="images/gis-training.jpg" alt="Training interns in GIS and GNSS surveying" loading="lazy">
         <div class="gallery-overlay">
           <span class="gallery-tag">Mentorship</span>
           <span class="gallery-caption">Training FIU undergraduate interns in GIS and RTK GPS surveying at MBC</span>
         </div>
       </div>
 
+      <div class="gallery-item span-2 reveal" onclick="openLightbox(this)">
+        <img src="images/field-group.jpg" alt="Research group wading through South Florida wetlands" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-tag">Fieldwork</span>
+          <span class="gallery-caption">Field expedition through South Florida's coastal wetlands with research collaborators</span>
+        </div>
+      </div>
+
       <div class="gallery-item reveal" onclick="openLightbox(this)">
-        <img src="images/gis-classroom.jpg" alt="Selvyn Valenzuela discusses GIS with visiting class" loading="lazy">
+        <img src="images/gis-classroom.jpg" alt="Selvyn Valenzuela presents GIS to visiting class" loading="lazy">
         <div class="gallery-overlay">
           <span class="gallery-tag">Education</span>
           <span class="gallery-caption">Presenting GIS workflows and mapping tools to a visiting university class</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" onclick="openLightbox(this)">
+        <img src="images/mbc-tour.jpg" alt="Group tour at Montgomery Botanical Center" loading="lazy">
+        <div class="gallery-overlay">
+          <span class="gallery-tag">Outreach</span>
+          <span class="gallery-caption">Leading a class tour through the living collections at Montgomery Botanical Center</span>
         </div>
       </div>
 
@@ -830,7 +637,7 @@
 <!-- ── PUBLICATIONS ── -->
 <section id="publications">
   <div class="container">
-    <span class="section-label reveal">Peer-Reviewed &amp; Selected Works</span>
+    <span class="section-label reveal">Peer-Reviewed Works</span>
     <h2 class="section-title reveal">Publications</h2>
     <div class="pub-list">
 
@@ -878,7 +685,7 @@
         <h3>Institutions</h3>
         <ul class="affil-list">
           <li><span><strong>Montgomery Botanical Center</strong> &mdash; Collections Specialist &amp; Graduate Fellow; Collections Development Team</span></li>
-          <li><span><strong>Florida International University</strong> &mdash; Department of Earth &amp; Environment; Lab for Conservation &amp; Sustainable Horticulture</span></li>
+          <li><span><strong>Florida International University</strong> &mdash; Department of Earth &amp; Environment; Lab for Conservation &amp; Sustainable Horticulture (Advisor: Dr. Amir Ali Khoddamzadeh)</span></li>
         </ul>
       </div>
       <div class="affil-group reveal">
@@ -910,21 +717,18 @@
       </a>
     </div>
     <a href="https://orcid.org/0009-0000-5775-0337" target="_blank" rel="noopener" class="orcid-badge">
-      <svg class="orcid-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path fill="#A6CE39" d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0z"/><path fill="#fff" d="M86.3 186.2H70.9V79.1h15.4v107.1zm22.2 0h41.8c39.7 0 57.6-28.7 57.6-53.5 0-27.5-20.5-53.5-56.9-53.5h-42.5v107zm15.4-93.1h24.5c34.9 0 42.9 26.5 42.9 39.6 0 21.5-13.7 39.5-42.3 39.5h-25.1V93.1zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1-5.6 0-10.1-4.6-10.1-10.1 0-5.6 4.5-10.1 10.1-10.1 5.6 0 10.1 4.6 10.1 10.1z"/></svg>
+      <svg style="width:16px;height:16px;" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path fill="#A6CE39" d="M128 0C57.3 0 0 57.3 0 128s57.3 128 128 128 128-57.3 128-128S198.7 0 128 0z"/><path fill="#fff" d="M86.3 186.2H70.9V79.1h15.4v107.1zm22.2 0h41.8c39.7 0 57.6-28.7 57.6-53.5 0-27.5-20.5-53.5-56.9-53.5h-42.5v107zm15.4-93.1h24.5c34.9 0 42.9 26.5 42.9 39.6 0 21.5-13.7 39.5-42.3 39.5h-25.1V93.1zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1-5.6 0-10.1-4.6-10.1-10.1 0-5.6 4.5-10.1 10.1-10.1 5.6 0 10.1 4.6 10.1 10.1z"/></svg>
       ORCID: 0009-0000-5775-0337
     </a>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
 <footer>
   <span>&copy; 2026 Selvyn Valenzuela. All rights reserved.</span>
   <a href="https://www.montgomerybotanical.org" target="_blank" rel="noopener">Montgomery Botanical Center</a>
 </footer>
 
-<!-- ── SCRIPTS ── -->
 <script>
-  // Lightbox
   function openLightbox(el) {
     const img = el.querySelector('img');
     const cap = el.querySelector('.gallery-caption');
@@ -940,23 +744,12 @@
     }
   }
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      document.getElementById('lightbox').classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    if (e.key === 'Escape') { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = ''; }
   });
-
-  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
+    entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
-
 </body>
 </html>
